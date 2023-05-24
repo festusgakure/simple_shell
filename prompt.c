@@ -35,7 +35,8 @@ void prompt(char **av, char **env)
 			free(string);
 			exit(EXIT_SUCCESS);
 		}
-		fpid = fork();
+		if (Handle_Path(args) == 0)
+			fpid = fork();
 		if (fpid == -1)
 		{
 			free(string);
