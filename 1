@@ -1,4 +1,8 @@
-#include "shell.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <fcntl.h>
+
 /**
  * executeCommand - Execute the command specified by args.
  * @args: Array of arguments.
@@ -13,8 +17,8 @@ void executeCommand(char **args, char **av, char **env)
 	if (access(args[0], X_OK) == -1)
 	{
 		fd = open("/dev/stderr", O_WRONLY);
-		write(fd, av[0], getLength(av[0]));
-		write(fd, str, getLength(str));
+		write(fd, av[0], getlenght(av[0]));
+		write(fd, str, getlenght(str));
 		exit(EXIT_FAILURE);
 	}
 	if (execve(args[0], args, env) == -1)
@@ -24,3 +28,4 @@ void executeCommand(char **args, char **av, char **env)
 		exit(EXIT_FAILURE);
 	}
 }
+
