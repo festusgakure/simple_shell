@@ -20,7 +20,7 @@ void prompt(char **av, char **env)
 		if (isatty(STDIN_FILENO))
 			write(STDOUT_FILENO, "#cisfun$ ", getLength("#cisfun$ "));
 		wordst = getline(&string, &n, stdin);
-		if (wordst == -1)
+		if (wordst == EOF)
 		{
 			free(string);
 			exit(EXIT_FAILURE);
