@@ -45,6 +45,7 @@ void prompt(char **av, char **env)
 			executeCommand(args, av, env);
 		else
 			wait(&wstatus);
+		free(string);
 	}
 }
 
