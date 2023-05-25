@@ -4,6 +4,7 @@
  * @env: Array of environment variables.
  * @av: Array of command-line arguments.
  */
+
 void prompt(char **av, char **env)
 {
 	ssize_t wordst;
@@ -17,7 +18,13 @@ void prompt(char **av, char **env)
 	while (1)
 	{
 		if (isatty(STDIN_FILENO))
-			write(STDOUT_FILENO, "#cisfun$ ", getLength("#cisfun$ "));
+		{
+			ssize_t ret;
+			ret = write(STDOUT_FILENO, "#cisfun$ ", getLength("#cisfun$ "));
+			if (ret == -1) {
+				exit(EXIT_FAILURE);
+			}
+		}
 		wordst = getline(&string, &n, stdin);
 		if (wordst == -1)
 		{
@@ -34,22 +41,8 @@ void prompt(char **av, char **env)
 			free(string);
 			exit(EXIT_SUCCESS);
 		}
-		fpid = fork();
-		if (fpid == -1)
-		{
-			free(string);
-			exit(EXIT_FAILURE);
-		}
-		if (fpid == 0)
-		{
-			executeCommand(args, av, env);
-			free(string);
-		}
-		else
-		{
-		wait(&wstatus);
-		free(string);
-		}
-	}	
+		executeCommand(args, av, env);
+		
+	}
 }
 
