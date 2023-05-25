@@ -49,6 +49,7 @@ void prompt(char **av, char **env)
 		{
 		wait(&wstatus);
 		free(string);
-		}	
+		}
+	}	
 }
 
