@@ -4,7 +4,6 @@
  * @env: Array of environment variables.
  * @av: Array of command-line arguments.
  */
-
 void prompt(char **av, char **env)
 {
 	ssize_t wordst;
@@ -42,10 +41,14 @@ void prompt(char **av, char **env)
 			exit(EXIT_FAILURE);
 		}
 		if (fpid == 0)
+		{
 			executeCommand(args, av, env);
+			free(string);
+		}
 		else
-			wait(&wstatus);
+		{
+		wait(&wstatus);
 		free(string);
-	}
+		}	
 }
 
