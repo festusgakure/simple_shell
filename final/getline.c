@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
- * salida3 - normal output 
- * mm: it the copy of the enviroment vars
+ * salida3 - normal output
+ * @mm: it the copy of the enviroment vars
  * @ee: total number of m
  */
 void salida3(char **mm, int ee)
@@ -10,7 +10,7 @@ void salida3(char **mm, int ee)
 	exit(currentstatus(NULL));
 }
 /**
- * salida2 - out puts with the ctr +D 
+ *salida2 - out puts with the ctr
  *@mm: copy of env varss
  *@ee: number of elements in m
  *@lline: total inputs from the users
@@ -25,7 +25,7 @@ void salida2(char **mm, int ee, char *lline)
 }
 /**
  * salida1 - outputs  the normal output
- * mm: it the copy of the enviroment vars
+ * @mm: it the copy of the enviroment vars
  * @ee: total number of m
  */
 

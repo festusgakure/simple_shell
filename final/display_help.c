@@ -47,7 +47,7 @@ ssize_t read_help(char **mm)
 }
 
 /**
- * read_cdhelp - Reads dc text 
+ * read_cdhelp - Reads dc text
  * @mm: Env copy
  * Return: number of letters to display
  */

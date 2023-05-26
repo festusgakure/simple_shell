@@ -67,7 +67,7 @@ void _fullcd(char *ff, char *aaux)
 		ff[ww] = 0;
 }
 /**
- * _cd - Changes the  directory 
+ * _cd - Changes the  directory
  * @aa: input of user
  * @lloop: counts the loops
  * @vv: args in the  input

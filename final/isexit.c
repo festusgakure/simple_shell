@@ -11,7 +11,8 @@
  * @ee: number of elements in m
  * @ff: input complete
  */
-void _type(char **pp, int LL, char *ll, int ii, char **vv, char **mm, int ee, char *ff)
+void _type(char **pp, int LL, char *ll,
+		int ii, char **vv, char **mm, int ee, char *ff)
 {
 	unsigned int  c = 0, flag = 0;
 	long int valor = 0;
@@ -59,10 +60,8 @@ void _type(char **pp, int LL, char *ll, int ii, char **vv, char **mm, int ee, ch
   * @pp: User's input
   * @LL: Loop counter
   * @ll: input user
-  * @ii: Pointer counter
   * @vv: arguments in input
   * @mm: copy of environmental variables
-  * @ee: number of elements in m
   * @ff: input complete
   * Return: The exit status
   */

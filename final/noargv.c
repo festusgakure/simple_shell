@@ -42,9 +42,10 @@ int rev(char **pp, int LL, char *lli, char **vv, char ***mm, int *ee, char *ff)
  *@aargv: args from user
  *@mm: env copy
  *@ee: count of elements in cp
- *@ff complete input of user
+ *@ff: complete input of user
  */
-void functions(char *lline, int lloop, char *aargv[], char ***mm, int *ee, char *ff)
+void functions(char *lline, int lloop,
+		char *aargv[], char ***mm, int *ee, char *ff)
 {
 	char **aargs = NULL;
 	int vvalue = 1, ii = 0;

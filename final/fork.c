@@ -21,11 +21,12 @@ int currentstatus(int *stat)
  * @vv: Loop ags
  * @ee: Length of environment var
  * @mm: Env copy
- * @ff: input 
+ * @ff: input
  * Return: Null.
  */
 
-void _frk(char **pp, char *ll, int aa, int LL, char **vv, int ee, char **mm, char *ff)
+void _frk(char **pp, char *ll, int aa,
+		int LL, char **vv, int ee, char **mm, char *ff)
 {
 	pid_t child_pid;
 	int ty = 0, status, exist, execute;

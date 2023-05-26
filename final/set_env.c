@@ -95,7 +95,7 @@ void _setenv(char **iu, char ***env, int *en, int lp, char *ag[])
 		_put_err(iu, lp, 5, ag);
 }
 /**
- * _setenvcreat - function to add or modify the enviroment strings called the "environment"
+ * _setenvcreat - function to add or modify the env string
  * @env: the copy of the  env
  * @en: number of elements in em
  * @AAentirenv: concatenate arguments

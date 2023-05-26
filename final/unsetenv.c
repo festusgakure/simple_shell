@@ -32,7 +32,7 @@ int _isunsetenv(char **iu, char **env, int *en, int lp, char *ag[])
 			_unsetenv(iu, env, en, lp, ag);
 		else
 			_put_err(iu, lp, 5, ag);
-	
+
 		currentstatus(&DDsalida);
 	}
 	else if (CCcont == 8)
@@ -49,7 +49,7 @@ int _isunsetenv(char **iu, char **env, int *en, int lp, char *ag[])
  * @env: Environment variables duplicate
  * @lp: Numbeer of loops
  * @ag: Input agruments
- * @en: Element count in _env
+ * @ne: Element count in _env
  * Return: void
  */
 void _unsetenv(char **iu, char **env, int *ne, int lp, char *ag[])

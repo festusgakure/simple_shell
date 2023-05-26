@@ -4,7 +4,7 @@
  * _calloc -  take stwo arguments and allocates memory
  * @memb: number of elements
  * @sz: size of the elements in bytes
- * Return: 	null
+ * Return:null
  */
 void *_calloc(unsigned int memb, unsigned int sz)
 {

@@ -4,7 +4,7 @@
  * _verifypath - check if the path has a collon  at the begining
  *@pth: searches for executable
  *@pd: string inside pwd environment variable
- *Return: path, or pwd 
+ *Return: path, or pwd
  */
 char *_verifypath(char *pth, char *pd)
 {

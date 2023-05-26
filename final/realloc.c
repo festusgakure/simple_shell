@@ -48,7 +48,7 @@ void *_realloc(char *pptr, unsigned int oold_size, unsigned int nnew_size)
 
 /**
  * _realloc2 - adjusts size and  copy the content
- * @aa: string to copy 
+ * @aa: string to copy
  * @pp:  ptr to reallocate
  * @oold: previous number of bytes
  * @nnew_size: current number of Bytes

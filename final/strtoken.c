@@ -66,7 +66,7 @@ char *_strtoky(char *ss, char *dd)
 * _strtoky2 - tokenized with;
 * @ss: string to be tokenized
 * @dd: delimiter
-* Return: first string 
+* Return: first string
 */
 char *_strtoky2(char *ss, char *dd)
 {
